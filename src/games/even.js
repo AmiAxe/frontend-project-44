@@ -2,7 +2,7 @@ import mainLogic from '../index.js';
 
 const mainTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = () => {
+const newGame = () => {
   const question = Math.round(Math.random() * 100);
   let answer;
   if (question % 2 === 0) {
@@ -14,5 +14,5 @@ const even = () => {
 };
 
 export default () => {
-   mainLogic(mainTask, even); 
+   mainLogic(mainTask, newGame); 
   };

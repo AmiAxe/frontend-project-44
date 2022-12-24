@@ -1,5 +1,6 @@
-import readlineSync from 'readline-sync';
-import helloUser from '../index.js';
+import mainLogic from '../index.js';
+
+const mainTask = 'What is the result of the expression?';
 
 const calcExpression = (a, b, operator) => {
   switch (operator) {
@@ -12,8 +13,7 @@ const calcExpression = (a, b, operator) => {
   }
 };
 
-const calc = () => {
-  helloUser();
+const newGame = () => {
 
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
@@ -35,4 +35,6 @@ const calc = () => {
   }
 };
 
-export default calc;
+export default () => {
+  mainLogic(mainTask, newGame);
+};
