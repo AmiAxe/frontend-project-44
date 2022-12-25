@@ -17,25 +17,11 @@ const newGame = () => {
   const a = Math.round(Math.random() * 10);
   const b = Math.round(Math.random() * 10);
   const arrayOperators = ['+', '-', '*'];
-  const indexArrayOperators = Math.round(Math.random() * 2);
-  const operator = arrayOperators[indexArrayOperators];
-  const question;
-  let answer;
-
-
-  for (let i = 0; i < 3; i += 1) {
-    
-
-    console.log(`Question: ${a} ${operator} ${b}`);
-    const answ = readlineSync.question('Your answer: ');
-    const result = calcExpression(a, b, operator);
-    console.log(typeof(result));
-    if (answ === result) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answ}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`);
-    }
-  }
+  const index = Math.round(Math.random() * 2);
+  const operator = arrayOperators[index];
+  const question = `${a} ${operator} ${b}`;
+  const answer = calcExpression(a, b, operator);
+  return [question, answer];
 };
 
 export default () => {
