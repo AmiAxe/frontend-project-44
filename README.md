@@ -5,3 +5,6 @@
 
 Example of working "brain-even":
 [![asciicast](https://asciinema.org/a/Fxaz3eDj65amRfkWiALuj3U4x.svg)](https://asciinema.org/a/Fxaz3eDj65amRfkWiALuj3U4x)
+
+Example of working "brain-even":
+[![asciicast](https://asciinema.org/a/8krnpjYLeDxA13itI8kEVrw53.svg)](https://asciinema.org/a/8krnpjYLeDxA13itI8kEVrw53)

@@ -6,7 +6,7 @@ const mainLogic = (mainTask, newGame) => {
   console.log(`Hello, ${name}!`);
   console.log(mainTask);
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i <= 3; i += 1) {
     const [question, answer] = newGame();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
