@@ -8,8 +8,8 @@ const newGame = () => {
   const question = `${number}`;
   let answer;
 
-  for (let i = number - 1; i > 1; i -= 1) {
-    if (number % i === 0) {
+  for (let i = number - 1; i >= 1; i -= 1) {
+    if (number % i === 0 || number === 1) {
       answer = 'no';
       return [question, answer];
     }
