@@ -14,6 +14,7 @@ const mainLogic = (mainTask, newGame) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);
