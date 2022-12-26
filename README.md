@@ -18,3 +18,7 @@ Example of working "brain-gcd":
 
 Example of working "brain-progression":
 [![asciicast](https://asciinema.org/a/LbsRX9O4mCPpELT2GBdUoS0eJ.svg)](https://asciinema.org/a/LbsRX9O4mCPpELT2GBdUoS0eJ)
+
+
+Example of working "brain-prime":
+[![asciicast](https://asciinema.org/a/IlmMSdbCAOU0ivq4jLo9rNZrj.svg)](https://asciinema.org/a/IlmMSdbCAOU0ivq4jLo9rNZrj)
