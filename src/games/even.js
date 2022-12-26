@@ -1,9 +1,10 @@
 import mainLogic from '../index.js';
+import getRandomInt from '../getRandomInt.js';
 
 const mainTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const newGame = () => {
-  const question = Math.round(Math.random() * 100);
+  const question = getRandomInt(1, 100);
   let answer;
   if (question % 2 === 0) {
     answer = 'yes';
