@@ -14,3 +14,7 @@ Example of working "brain-calc":
 
 Example of working "brain-gcd":
 [![asciicast](https://asciinema.org/a/SQR30BoNxNszYMfBJFsSPTZf7.svg)](https://asciinema.org/a/SQR30BoNxNszYMfBJFsSPTZf7)
+
+
+Example of working "brain-progression":
+[![asciicast](https://asciinema.org/a/LbsRX9O4mCPpELT2GBdUoS0eJ.svg)](https://asciinema.org/a/LbsRX9O4mCPpELT2GBdUoS0eJ)
