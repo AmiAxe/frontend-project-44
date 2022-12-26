@@ -10,6 +10,8 @@ const calcExpression = (a, b, operator) => {
       return a - b;
     case '*':
       return a * b;
+    default:
+      return NaN;
   }
 };
 

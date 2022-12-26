@@ -14,5 +14,5 @@ const newGame = () => {
 };
 
 export default () => {
-   mainLogic(mainTask, newGame); 
-  };
+  mainLogic(mainTask, newGame);
+};

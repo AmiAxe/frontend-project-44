@@ -1,10 +1,10 @@
-import mainLogic from '../index.js'
-import getRandomInt from '../getRandomInt.js'
+import mainLogic from '../index.js';
+import getRandomInt from '../getRandomInt.js';
 
 const mainTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const newGame = () => {
-  let number = getRandomInt(1, 100);
+  const number = getRandomInt(1, 100);
   const question = `${number}`;
   let answer;
 

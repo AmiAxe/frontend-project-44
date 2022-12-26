@@ -3,11 +3,12 @@ import mainLogic from '../index.js';
 const mainTask = 'Find the greatest common divisor of given numbers.';
 
 const countGcd = (bigNumber, smallNumber) => {
-  for (let i = smallNumber; i > 0 ; i -= 1) {
+  for (let i = smallNumber; i > 0; i -= 1) {
     if (bigNumber % i === 0 && smallNumber % i === 0) {
       return i;
     }
   }
+  return NaN;
 };
 
 const newGame = () => {

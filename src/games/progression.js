@@ -1,5 +1,5 @@
-import mainLogic from '../index.js'
-import getRandomInt from '../getRandomInt.js'
+import mainLogic from '../index.js';
+import getRandomInt from '../getRandomInt.js';
 
 const mainTask = 'What number is missing in the progression?';
 
@@ -9,7 +9,7 @@ const newGame = () => {
   let question = '';
   const hideElement = getRandomInt(0, 9);
   const arrayNumbers = [getRandomInt(0, 15)];
-  
+
   for (let i = 0; i < 10; i += 1) {
     if (i === hideElement) {
       answer = arrayNumbers[i];
