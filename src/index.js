@@ -16,7 +16,7 @@ const mainLogic = (mainTask, newGame) => {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!`);
     }
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default mainLogic;
