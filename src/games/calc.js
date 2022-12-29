@@ -15,7 +15,7 @@ const calcExpression = (a, b, operator) => {
   }
 };
 
-const newGame = () => {
+const initGame = () => {
   const a = Math.round(Math.random() * 10);
   const b = Math.round(Math.random() * 10);
   const arrayOperators = ['+', '-', '*'];
@@ -27,5 +27,5 @@ const newGame = () => {
 };
 
 export default () => {
-  mainLogic(mainTask, newGame);
+  mainLogic(mainTask, initGame);
 };

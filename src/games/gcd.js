@@ -12,20 +12,14 @@ const countGcd = (bigNumber, smallNumber) => {
   return NaN;
 };
 
-const newGame = () => {
+const initGame = () => {
   const a = getRandomInt(1, 100);
   const b = getRandomInt(1, 100);
   const question = `${a} ${b}`;
-  let answer = 0;
-
-  if (a > b) {
-    answer = countGcd(a, b);
-  } else {
-    answer = countGcd(b, a);
-  }
+  const answer = (a > b) ? countGcd(a, b) : countGcd(b, a);
   return [question, answer];
 };
 
 export default () => {
-  mainLogic(mainTask, newGame);
+  mainLogic(mainTask, initGame);
 };
