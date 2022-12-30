@@ -1,4 +1,4 @@
-import initLogic from '../index.js';
+import { roundsCount, initLogic } from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const mainTask = 'Find the greatest common divisor of given numbers.';
@@ -15,7 +15,7 @@ const countGcd = (bigNumber, smallNumber) => {
 const launchGame = () => {
   const rounds = [];
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const a = getRandomInt(1, 100);
     const b = getRandomInt(1, 100);
     const question = `${a} ${b}`;

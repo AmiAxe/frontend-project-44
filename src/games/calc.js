@@ -1,5 +1,5 @@
-import initLogic from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
+import { roundsCount, initLogic } from '../index.js';
 
 const mainTask = 'What is the result of the expression?';
 
@@ -20,7 +20,7 @@ const launchGame = () => {
   const arrayOperators = ['+', '-', '*'];
   const rounds = [];
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const a = getRandomInt(0, 10);
     const b = getRandomInt(0, 10);
     const index = getRandomInt(0, 2);
