@@ -1,15 +1,19 @@
-import mainLogic from '../index.js';
-import getRandomInt from '../getRandomInt.js';
-import isEven from '../isEven.js';
+import initLogic from '../index.js';
+import getRandomInt from '../utils/getRandomInt.js';
+
+const isEven = (question) => question % 2 === 0;
 
 const mainTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const initGame = () => {
-  const question = getRandomInt(1, 100);
-  const answer = isEven(question);
-  return [question, answer];
+const launchGame = () => {
+  const rounds = [];
+
+  for (let i = 0; i < 3; i += 1) {
+    const question = getRandomInt(1, 100);
+    const answer = `${isEven(question) ? 'yes' : 'no'}`;
+    rounds.push([question, answer]);
+  }
+  initLogic(mainTask, rounds);
 };
 
-export default () => {
-  mainLogic(mainTask, initGame);
-};
+export default launchGame;

@@ -1,5 +1,5 @@
-import mainLogic from '../index.js';
-import getRandomInt from '../getRandomInt.js';
+import initLogic from '../index.js';
+import getRandomInt from '../utils/getRandomInt.js';
 
 const mainTask = 'Find the greatest common divisor of given numbers.';
 
@@ -12,14 +12,17 @@ const countGcd = (bigNumber, smallNumber) => {
   return NaN;
 };
 
-const initGame = () => {
-  const a = getRandomInt(1, 100);
-  const b = getRandomInt(1, 100);
-  const question = `${a} ${b}`;
-  const answer = (a > b) ? countGcd(a, b) : countGcd(b, a);
-  return [question, answer];
+const launchGame = () => {
+  const rounds = [];
+
+  for (let i = 0; i < 3; i += 1) {
+    const a = getRandomInt(1, 100);
+    const b = getRandomInt(1, 100);
+    const question = `${a} ${b}`;
+    const answer = (a > b) ? countGcd(a, b) : countGcd(b, a);
+    rounds.push([question, answer]);
+  }
+  initLogic(mainTask, rounds);
 };
 
-export default () => {
-  mainLogic(mainTask, initGame);
-};
+export default launchGame;

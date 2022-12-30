@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import initGame from '../src/games/prime.js';
+import launchGame from '../src/games/prime.js';
 
-initGame();
+launchGame();

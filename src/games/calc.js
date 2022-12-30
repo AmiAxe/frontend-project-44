@@ -1,4 +1,5 @@
-import mainLogic from '../index.js';
+import initLogic from '../index.js';
+import getRandomInt from '../utils/getRandomInt.js';
 
 const mainTask = 'What is the result of the expression?';
 
@@ -15,17 +16,20 @@ const calcExpression = (a, b, operator) => {
   }
 };
 
-const initGame = () => {
-  const a = Math.round(Math.random() * 10);
-  const b = Math.round(Math.random() * 10);
+const launchGame = () => {
   const arrayOperators = ['+', '-', '*'];
-  const index = Math.round(Math.random() * 2);
-  const operator = arrayOperators[index];
-  const question = `${a} ${operator} ${b}`;
-  const answer = calcExpression(a, b, operator);
-  return [question, answer];
+  const rounds = [];
+
+  for (let i = 0; i < 3; i += 1) {
+    const a = getRandomInt(0, 10);
+    const b = getRandomInt(0, 10);
+    const index = getRandomInt(0, 2);
+    const operator = arrayOperators[index];
+    const question = `${a} ${operator} ${b}`;
+    const answer = calcExpression(a, b, operator);
+    rounds.push([question, answer]);
+  }
+  initLogic(mainTask, rounds);
 };
 
-export default () => {
-  mainLogic(mainTask, initGame);
-};
+export default launchGame;
